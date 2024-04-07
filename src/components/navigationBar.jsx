@@ -25,7 +25,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <nav className="pt-6 lg:pt-8 flex items-center justify-between text-slate-900 font-semibold leading-6 dark:text-slate-200">
+    <nav className="pt-6 lg:pt-10 flex items-center justify-between text-slate-900 font-semibold leading-6 dark:text-slate-200">
       <div className="flex items-center gap-x-2">
         <FontAwesomeIcon icon={faCode} className="text-sky-500" size="lg" />
         <p>Omar Fares</p>
