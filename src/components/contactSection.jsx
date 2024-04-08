@@ -49,6 +49,7 @@ const ContactSection = () => {
               id="fname"
               name="fname"
               placeholder="Full Name"
+              required
             />
             <input
               className="p-3 rounded-2xl bg-transparent font-medium focus:outline-none focus:ring-1 focus:ring-slate-400 text-slate-900 dark:text-white placeholder-slate-600 dark:placeholder-slate-400 border border-slate-400"
@@ -56,6 +57,7 @@ const ContactSection = () => {
               id="email"
               name="email"
               placeholder="Email"
+              required
             />
             <textarea
               name="message"
@@ -63,6 +65,7 @@ const ContactSection = () => {
               class="p-3 rounded-2xl bg-transparent font-medium focus:outline-none focus:ring-1 focus:ring-slate-400 text-slate-900 dark:text-white placeholder-slate-600 dark:placeholder-slate-400 border border-slate-400 resize-none "
               placeholder="message"
               spellcheck="false"
+              required
             ></textarea>
             <input
               className="w-40 h-12 bg-slate-900 hover:bg-slate-700 text-white font-normal md:font-medium lg:font-medium text-xs md:text-sm lg:text-sm rounded-lg dark:bg-sky-500 dark:hover:bg-sky-600"
