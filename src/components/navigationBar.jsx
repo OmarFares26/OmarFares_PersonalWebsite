@@ -4,11 +4,13 @@ import {
   faCode,
   faLightbulb,
   faEllipsisVertical,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 const NavigationBar = () => {
   const localSotredTheme = localStorage.getItem("theme");
   const [theme, settheme] = useState(localSotredTheme);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -30,6 +32,61 @@ const NavigationBar = () => {
         <FontAwesomeIcon icon={faCode} className="text-sky-500" size="lg" />
         <p>Omar Fares</p>
       </div>
+
+      <section
+        className={
+          isNavOpen ? "fixed z-50 inset-0 lg:hidden md:hidden" : "hidden"
+        }
+      >
+        <div class="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80">
+          <div className="fixed top-4 right-4 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 text-base font-semibold text-slate-900 dark:bg-slate-800 dark:text-slate-400 dark:highlight-white/5">
+            <FontAwesomeIcon
+              className="cursor-pointer absolute top-6.5 right-5 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+              icon={faXmark}
+              size="xl"
+              onClick={() => setIsNavOpen(false)}
+            />
+            <ul className="space-y-6">
+              <li>
+                <a
+                  className="hover:text-sky-500 dark:hover:text-sky-400"
+                  href="#home"
+                  onClick={() => setIsNavOpen(false)}
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-sky-500 dark:hover:text-sky-400"
+                  href="#about"
+                  onClick={() => setIsNavOpen(false)}
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-sky-500 dark:hover:text-sky-400"
+                  href="#projects"
+                  onClick={() => setIsNavOpen(false)}
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-sky-500 dark:hover:text-sky-400"
+                  href="/contact"
+                  onClick={() => setIsNavOpen(false)}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <div className="flex">
         <ul className="items-center gap-x-8 hidden md:flex lg:flex">
@@ -77,6 +134,7 @@ const NavigationBar = () => {
             className="cursor-pointer hover:text-sky-500 md:hidden lg:hidden"
             icon={faEllipsisVertical}
             size="lg"
+            onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           />
         </div>
       </div>

@@ -62,9 +62,9 @@ const ContactSection = () => {
             <textarea
               name="message"
               rows="7"
-              class="p-3 rounded-2xl bg-transparent font-medium focus:outline-none focus:ring-1 focus:ring-slate-400 text-slate-900 dark:text-white placeholder-slate-600 dark:placeholder-slate-400 border border-slate-400 resize-none "
+              className="p-3 rounded-2xl bg-transparent font-medium focus:outline-none focus:ring-1 focus:ring-slate-400 text-slate-900 dark:text-white placeholder-slate-600 dark:placeholder-slate-400 border border-slate-400 resize-none "
               placeholder="message"
-              spellcheck="false"
+              spellCheck="false"
               required
             ></textarea>
             <input

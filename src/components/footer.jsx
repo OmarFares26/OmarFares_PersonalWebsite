@@ -6,7 +6,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 const FooterSection = () => {
   return (
     <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-32">
-      <div class="border-t border-slate-200 pt-10 pb-4 dark:border-slate-200/5">
+      <div className="border-t border-slate-200 pt-10 pb-4 dark:border-slate-200/5">
         <div className="flex flex-col justify-center items-center ">
           <ul className="flex gap-x-8">
             <li>
@@ -79,7 +79,7 @@ const FooterSection = () => {
               </a>
             </li>
           </ul>
-          <p class="mt-6 text-sm leading-6 text-slate-500">
+          <p className="mt-6 text-sm leading-6 text-slate-500">
             © 2024 Omar Fares. All rights reserved.
           </p>
         </div>
