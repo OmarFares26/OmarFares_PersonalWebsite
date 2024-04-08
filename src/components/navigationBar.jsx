@@ -38,7 +38,7 @@ const NavigationBar = () => {
           isNavOpen ? "fixed z-50 inset-0 lg:hidden md:hidden" : "hidden"
         }
       >
-        <div class="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80">
+        <div className="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80">
           <div className="fixed top-4 right-4 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 text-base font-semibold text-slate-900 dark:bg-slate-800 dark:text-slate-400 dark:highlight-white/5">
             <FontAwesomeIcon
               className="cursor-pointer absolute top-6.5 right-5 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
