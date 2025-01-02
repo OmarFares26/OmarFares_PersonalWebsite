@@ -4,7 +4,7 @@ const PersonalProfile = () => {
   return (
     <div
       id="home"
-      className="max-w-5xl mx-auto pt-20 sm:pt-24 md:flex md:pt-24 lg:flex lg:pt-32"
+      className="max-w-5xl mx-auto pt-20 sm:pt-24 md:pt-24 lg:pt-32 lg:flex md:flex"
     >
       <div className="content-center md:pr-8 lg:pr-8">
         <h1 className="text-slate-900 mb-6 font-extrabold text-4xl sm:text-5xl lg:text-6xl dark:text-white">

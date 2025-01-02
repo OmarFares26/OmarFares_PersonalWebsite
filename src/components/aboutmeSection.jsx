@@ -18,13 +18,13 @@ const AboutMeSection = () => {
       <div className="mt-8 flex flex-col">
         <div className="text-base text-slate-600 md:text-lg lg:text-lg dark:text-slate-400">
           <p className="mb-4">
-            I am Omar Fares, a 22-year-old software developer who holds a
+            I am Omar Fares, a 23-year-old software developer who holds a
             Bachelor's degree in Creative Computing from FH Sankt Pölten. My
             passion lies in crafting exceptional digital experiences.
           </p>
           <p className="mb-4">
-            In web development, I excel in HTML, CSS, JavaScript, TypeScript,
-            ReactJS, and Redux. Whether it's building responsive layouts or
+            In web development, I excel in Java, JavaScript, TypeScript,
+            ReactJS, Redux, HTML and CSS. Whether it's building responsive layouts or
             optimizing performance, I thrive on the challenges of bringing web
             applications to life.
           </p>
@@ -42,7 +42,7 @@ const AboutMeSection = () => {
         </div>
 
         <a
-          href="/pdf/OmarFares-CV.pdf"
+          href="/pdf/OmarFaresCV2025"
           className="bg-sky-500 hover:bg-sky-600 text-sm md:text-base lg:text-base text-white font-medium h-12 w-44 rounded-lg flex items-center justify-center"
         >
           Download CV

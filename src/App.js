@@ -8,7 +8,7 @@ import FooterSection from "./components/footer";
 
 function App() {
   return (
-    <div className="h-full px-4 bg-white dark:bg-slate-900 sm:px-6 md:px-8">
+    <div className="px-4 sm:px-6 md:px-8 bg-white dark:bg-slate-900">
       <NavigationBar />
       <PersonalProfile />
       <AboutMeSection />
