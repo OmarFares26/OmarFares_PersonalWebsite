@@ -42,7 +42,7 @@ const AboutMeSection = () => {
         </div>
 
         <a
-          href="/pdf/OmarFaresCV2025"
+          href="/pdf/OmarFaresCV2025.pdf"
           className="bg-sky-500 hover:bg-sky-600 text-sm md:text-base lg:text-base text-white font-medium h-12 w-44 rounded-lg flex items-center justify-center"
         >
           Download CV
